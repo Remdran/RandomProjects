@@ -1,0 +1,54 @@
+*{
+    font-family: 'Prociono', serif;
+}
+
+body{
+    background-color: #EFEFEF;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    background-color: #3F5765;
+    height: 62px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+li{
+    float:left;
+    list-style-type: none;
+    color: #BDD4DE;
+    padding: 20px 40px 20px 40px;
+    font-size: 1.2em;    
+    font-weight: bold;
+}
+
+li:hover
+{
+    background-color: #FF530D;
+    border-radius: 5px;
+}
+
+.blog-posts{
+    width: 75%;
+    background-color: #F7FAFF;
+    line-height: 1.5;
+    padding: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+h2{
+    color: #3F5765;
+}
+
+.info{
+    font-size: 0.8em;
+    font-style: italic;
+    color: #77868C;
+}
+
+p{
+    color: #303638;
+}
