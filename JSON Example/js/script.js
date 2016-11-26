@@ -7,7 +7,7 @@ document.querySelector("button").addEventListener("click", function() {
     var name = "";
 
     // Call Server to get the name
-    $ajaxUtils.sendGetRequest("https://raw.githubusercontent.com/Remdran/RandomProjects/gh-pages/JSON%20Example/data/name.txt", function (request) {
+    $ajaxUtils.sendGetRequest("https://remdran.github.io/RandomProjects/JSON%20Example/data/name.txt", function (request) {
         self.name = request.responstText;
 
         document.querySelector("#content").innerHTML = "<h2>Hello " + self.name + "!</h2>";
