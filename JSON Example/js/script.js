@@ -7,12 +7,16 @@ document.querySelector("button").addEventListener("click", function() {
     var name = "";
 
     // Call Server to get the name
-    $ajaxUtils.sendGetRequest("https://remdran.github.io/RandomProjects/JSON%20Example/data/name.txt", function (request) {
-        self.name = request.responstText;
+    $ajaxUtils.sendGetRequest("/data/name.json", function (res) {
+        var message = res.firstName + " " + res.lastName;
+        if(res.stuff){
+            message += " has stuff";
+        }
+        else {
+            message += " doesn't have stuff";
+        }
 
-        document.querySelector("#content").innerHTML = "<h2>Hello " + self.name + "!</h2>";
-    });
-
-    
+        document.querySelector("#content").innerHTML = "<h2>" + message + "!</h2>";
+        });    
     });
 });

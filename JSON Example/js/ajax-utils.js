@@ -21,18 +21,29 @@
     }
 
     // Makes an Ajax GET Request to 'requestUrl'
-    ajaxUtils.sendGetRequest = function(requestUrl, responseHandler) {
+    ajaxUtils.sendGetRequest = function(requestUrl, responseHandler, isJsonResponse) {
         var request = getRequestObject();
         request.onreadystatechange = function() {               //Cant pass parameters to a function value which is why this needs doing inside an actual function
-            handleResponse(request, responseHandler);
+            handleResponse(request, responseHandler, isJsonResponse);
         };
         request.open("GET", requestUrl, true);
         request.send(null); // For POST Only      
       };
 
-      function handleResponse(request, responseHandler){
+      function handleResponse(request, responseHandler, isJsonResponse){
           if((request.readyState == 4) && (request.status == 200)) {
-              responseHandler(request);
+
+              // Default to isJsonResponse = true
+              if(isJsonResponse == undefined){
+                  isJsonResponse = true;
+              }
+
+              if(isJsonResponse){
+                 responseHandler(JSON.parse(request.responseText));            
+              }
+              else {
+                  responseHandler(request.responseText);
+              }
           }
       }
 
