@@ -6,7 +6,9 @@ body{
     background-color: #EFEFEF;
     width: 80%;
     margin: 0 auto;
+    clear:both;
 }
+
 
 ul{
     background-color: #3F5765;
@@ -31,16 +33,25 @@ li:hover
 }
 
 .blog-posts{
-    width: 75%;
+    float:left;
+    width: 80%;
+}
+
+.article{   
     background-color: #F7FAFF;
     line-height: 1.5;
     padding: 1.5em;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
-h2{
+
+h2, h3{
     color: #3F5765;
+}
+
+h3{
+    text-align: center;
 }
 
 .info{
@@ -51,4 +62,44 @@ h2{
 
 p{
     color: #303638;
+}
+
+.sidebar{
+    float:right;
+    width: 14%;   
+    background-color: #F7FAFF;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin-bottom: 30px;  
+}
+
+.sidebar2{
+    float:right;
+    width: 14%;
+    background-color: #F7FAFF;
+    padding: 1.5em;
+    border-radius: 10px; 
+}
+
+.prevart{
+    text-align: center;
+}
+
+.logo{
+    margin-right: 5px;
+    transform: translateY(12px);
+}
+
+a:link{    
+    text-decoration: none;
+}
+
+.footer{   
+    clear:both;
+     margin-top: 50px;
+}
+
+.credits{
+    text-align: center;
+    color: #303638
 }
