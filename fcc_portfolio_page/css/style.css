@@ -1,0 +1,66 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    width: 50%;
+    margin:0 auto;
+}
+
+.content{
+    width: 60%;
+    margin: 0 auto;
+}
+.about{
+    padding-top: 200px;
+    height:400px;
+    background-color:gray;
+    position: relative;
+    border: 1px solid darkslategray;
+}
+
+.profilepic{
+    border-radius: 50%;
+    float:right;
+    position: absolute;
+    top: 110px;
+}
+
+.summary{
+    width:50%;
+    margin-right:100px;
+    margin-left: 100px;
+    float:left;
+}
+
+.portfolio{    
+    height: 800px;
+    background-color:lightskyblue;
+    border-left: 1px solid darkslategrey;
+    border-right: 1px solid darkslategrey;
+    border-bottom: 1px solid darkslategrey;
+}
+
+h2{
+    margin:0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.img-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project1{
+    float:left;
+    margin-bottom: 30px;
+}
+
+.project2{
+    float:right;
+    margin-bottom: 30px;
+}
+
