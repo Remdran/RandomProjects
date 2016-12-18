@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://c2.staticflickr.com/6/5062/5613967601_62d4b0573a_b.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 150px;
+    background-color: #d1d1d1;
+}
+
+h1{
+    font-family: 'Yellowtail', cursive;
+    transform: translateY(220px) translateX(-230px);
+}
+
+#summ{
+     transform: translateY(220px) translateX(-240px);
+     font-family: 'Architects Daughter', cursive;
+     font-size: 16px;
+}
+
+button{
+     transform: translateY(240px) translateX(650px);
+     padding: 1em;
+     border-radius: 5px;
+}
+
+#quote{
+     width: 15%;
+     font-family: 'Architects Daughter', cursive;
+     font-size: 20px;
+     transform: translateY(260px) translateX(580px);
+}
