@@ -1,0 +1,7 @@
+List of todos for basic Space Invaders-esque game.
+
+☐ Constrain player and enemy movement to play area
+☐ Create an array to hold multiple enemy entities and their attributes
+☐ Place all of the enemies and handle their movement from one side of the screen to the other, including moving down the screen when hitting an edge
+☐ Implement bullets for both enemies and player
+☐ Handle collision
