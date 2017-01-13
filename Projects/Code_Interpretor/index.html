@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>Code Interpretor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header">
+        <h2 id="title">Code Interpretor</h2>
+        <div class="controlgroup">
+             <button id="html">HTML</button>
+             <button id="css">CSS</button>
+             <button id="js">JavaScript</button>
+             <button id="output">Output</button>
+        </div>        
+    </div>
+
+    <div class="windowWrapper">
+        <div id="htmlWindow" class="windows">
+            <textarea id="htmlContent" name="htmlContent" rows="50" cols="65"><h1>Hello</h1></textarea>
+        </div>
+
+        <div id="cssWindow" class="windows">
+            <textarea name="cssContent" rows="50" cols="65"></textarea>
+        </div>
+
+        <div id="jsWindow" class="windows">
+            <textarea name="jsContent" rows="50" cols="65"></textarea>
+        </div>
+
+        <div id="outputWindow" class="windows">    
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

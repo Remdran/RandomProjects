@@ -1,6 +1,6 @@
-/*
- *   Create the canvas 800*800 with a black background
- */
+//-------------------------------------------------------------------------
+//  Create the canvas 800*800 with a black background
+//-------------------------------------------------------------------------
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 var WIDTH = canvas.width = 800;
@@ -24,9 +24,7 @@ var player = {
 //-------------------------------------------------------------------------
 // Enemy ship
 //-------------------------------------------------------------------------
-
 var enemyManager = {};
-
 
 function Enemy(id, x, y, hp, spriteHeight, spriteWidth) {
     var enemy = {
@@ -70,7 +68,6 @@ Enemy('enemy18', 640, 280, 1, 50, 50);
 //-------------------------------------------------------------------------
 // Handle player movement
 //-------------------------------------------------------------------------
-
 document.onkeydown = function(event) {
     if(event.keyCode == 68) //d 
         player.pressingRight = true;
@@ -144,10 +141,8 @@ var update = function() {
 // Render
 //-------------------------------------------------------------------------
 var render = function() {   
-        
-    // ctx.fillRect(enemy.x, enemy.y, enemy.spriteWidth, enemy.spriteHeight);
-    // ctx.fillRect(enemy2.x, enemy2.y, enemy2.spriteWidth, enemy2.spriteHeight);
     ctx.fillRect(player.x, player.y, player.spriteWidth, player.spriteHeight);
 }
 
 setInterval(update,40);
+
