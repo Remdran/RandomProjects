@@ -28,5 +28,3 @@ function updateOutput() {
     // Disable javascript execution whilst its unsecure for now 
     //document.getElementById('outputContent').contentWindow.eval($( '#jsContent').val());
 }
-
-
