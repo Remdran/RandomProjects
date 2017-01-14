@@ -25,7 +25,8 @@ function updateOutput() {
     $('iframe').contents().find('html').html("<html><head><style type='text/css'>" + $('#cssContent').val() + "</style></head></body>" + $('#htmlContent').val() + "</body></html>")
     ;
 
-    // Disable javascript execution whilst its unsecure for now
+    // Disable javascript execution whilst its unsecure for now 
     //document.getElementById('outputContent').contentWindow.eval($( '#jsContent').val());
 }
+
 
