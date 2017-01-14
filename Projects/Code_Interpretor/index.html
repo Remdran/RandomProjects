@@ -12,28 +12,21 @@
     <div id="header">
         <h2 id="title">Code Interpretor</h2>
         <div class="controlgroup">
-             <button id="html">HTML</button>
-             <button id="css">CSS</button>
-             <button id="js">JavaScript</button>
-             <button id="output">Output</button>
+             <button data-name="html" class="controlButton active" id="html">HTML</button>
+             <button data-name="css" class="controlButton" id="css">CSS</button>
+             <button data-name="js" class="controlButton" id="js">JavaScript</button>
+             <button data-name="output" class="controlButton" id="output">Output</button>
         </div>        
     </div>
 
     <div class="windowWrapper">
-        <div id="htmlWindow" class="windows">
-            <textarea id="htmlContent" name="htmlContent" rows="50" cols="65"><h1>Hello</h1></textarea>
-        </div>
+       
+        <textarea data-name="htmlContent" class="windows" id="htmlContent" name="htmlContent"><p>Hi</p></textarea>
+        <textarea data-name="cssContent" class="windows" id="cssContent" name="cssContent">p {color:green; font-size: 100px;}</textarea>
+        <textarea data-name="jsContent" class="windows" id="jsContent" name="jsContent"></textarea>
+        <iframe data-name="outputContent" id="outputContent" class="windows">    
+        </iframe>
 
-        <div id="cssWindow" class="windows">
-            <textarea name="cssContent" rows="50" cols="65"></textarea>
-        </div>
-
-        <div id="jsWindow" class="windows">
-            <textarea name="jsContent" rows="50" cols="65"></textarea>
-        </div>
-
-        <div id="outputWindow" class="windows">    
-        </div>
     </div>
 
 

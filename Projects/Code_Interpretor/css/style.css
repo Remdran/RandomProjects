@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 #header {
     background-color: #e5e5e5;
 }
@@ -15,33 +16,24 @@
     color: #d8e7ff; 
 }
 
-.windows {
-    width: 25%;
-    height: 757px;
-    border-right: 1px solid black;
-    padding: .5em;
-    border: 0px;
-    float:left;    
+textarea{
+    resize:none;
 }
 
-#htmlWindow {
-
+.windows {    
+    float: left;   
 }
 
-#cssWindow {
-    
-}
-
-#jsWindow {
-}
-
-
-#outputWindow {   
-    margin-top: 8px;
-    width: 24%;
-    transform: translateX(10px);
+#outputWindow {  
     border-right: 1px solid #a9a9a9;
     border-top: 1px solid #a9a9a9;
-    border-bottom: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;   
 }
 
+.hide {
+    display: none;
+}
+
+.active {
+    color: blue;
+}
