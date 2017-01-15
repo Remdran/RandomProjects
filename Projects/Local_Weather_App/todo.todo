@@ -1,0 +1,7 @@
+☐ Style the page
+☐ Handle querying the api a different way if the user doesnt want to use geoloc
+☐ Make sure the icons match up to all the possible weather types the api can return
+☐ Potentially add a background image that changes depending on the weather and possibly the time of day?
+☐ Add Temperature
+    ☐ Let the user change between celsius and fahrenheit
+☐ Add a little more weather information, wind speed etc anything relevant really

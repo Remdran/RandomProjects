@@ -5,11 +5,27 @@
 }
 
 body {
-    background: url(http://fullhdwall.com/wp-content/uploads/2016/04/Landscape-Sunny-Day.jpg) no-repeat fixed center;
+    /*background: url(http://fullhdwall.com/wp-content/uploads/2016/04/Landscape-Sunny-Day.jpg) no-repeat fixed center;*/
+    background-color: #dbdbdb;
     background-size: cover;
 }
 
 h1 {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 0;
+}
+
+#wrapper {
+    width: 150px;
+    margin: 0 auto;
+}
+
+#location {
+    margin: 15px 0;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    margin: 15px 0px 15px 30px;
 }
