@@ -20,9 +20,9 @@ if (navigator.geolocation) {
             data: {},
             dataType: 'json',
             success: function (data) {
-                // Store the weather condition in a variable and pass it to a function to set the icon
                 console.log(data);
                 $( '#location' ).html(data.query.results.channel.location.city + "<br>" + data.query.results.channel.location.country);
+                // Store the weather condition in a variable and pass it to a function to set the icon
                 var weather = data.query.results.channel.item.condition.text;
                 setupIcon(weather);                
             },
@@ -39,28 +39,19 @@ else {
 
 function setupIcon(weather) {
     console.log(weather);
-    switch(weather) {
-        case "Sun":
-            $( '#icon' ).attr("src", icons.sunny);
-            break;
-        case "Breezy":
-        case "Windy":
-            $( '#icon' ).attr("src", icons.windy);
-            break;
-        case "cloud":
-            $( '#icon' ).attr("src", icons.cloud);
-            break;
-        case "rain":
-            $( '#icon' ).attr("src", icons.heavyRain);
-            break;
-        case "snow":
-            $( '#icon' ).attr("src", icons.snow);
-            break;
-        case "thunder" :
-            $( '#icon' ).attr("src", icons.thunder);
-            break;
-        default: 
-            $( '#icon' ).attr("src", icons.sunny);
+
+    if (weather.includes("Sun")) {
+         $( '#icon' ).attr("src", icons.sunny);        
+    } else if (weather.includes("Breezy") || weather.includes("Wind")) {
+         $( '#icon' ).attr("src", icons.windy);
+    } else if (weather.includes("Cloud")) {
+        $( '#icon' ).attr("src", icons.cloud);
+    } else if (weather.includes("Rain") || weather.includes("Shower")) {
+        $( '#icon' ).attr("src", icons.heavyRain);
+    } else if (weather.includes("Snow")) {
+        $( '#icon' ).attr("src", icons.snow);
+    } else {
+         $( '#icon' ).attr("src", icons.sunny);
     }
 }
 
