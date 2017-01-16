@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio and Video</title>
+</head>
+<body>
+    <video width="320" height="240" controls id="video">        <!-- Implement video into the website using HTML5 -->
+        <source src="#" type="video/mp4">
+        If you see this your browser doesn't support html5
+    </video>      
+    <button id="play">Play</button>
+
+
+
+    <audio controls>                                            <!-- Implement audio into the website using HTML5 -->
+        <source src="#" type="audio/mpeg">
+        If you see this your browser doesn't support html5
+    </audio>
+
+
+
+    <script>
+        document.getElementById('play').onclick = function() {    // Create a button to handle playing and pausing using JS
+            if(document.getElementById('video').paused) {
+                document.getElementById('video').play();
+                this.innerHTML = 'Pause';
+            } else {
+                document.getElementById('video').pause();
+                this.innerHTML = 'Play';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 forms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="myForm">        
+        <p>Placeholder: <input type="text" placeholder="Insert name here"></p> <!-- placeholder="" - Fill the input with placeholder text -->
+
+        <p>Autofocus: <input type="text" autofocus></p>    <!-- autofocus - When the page loads make this the element that is focused -->
+
+        <p>AutoComplete Off: <input type="text" autocomplete="off"></p>   <!-- autocomplete="" - tells the browser whether to autocomplete in this field or not. On is default -->
+
+        <p>Required: <input type="text" required></p>     <!-- required - makes it so a field has to be filled in -->
+
+        <p>Email: <input type="email"></p>         <!-- email - makes the browser require an email address to be put into the field -->
+
+        <p>Pattern: <input type="text" pattern="[0-9]"></p> <!-- pattern - requires the user to input the required pattern, in this case a single digit 0-9 (uses regex)  (html5pattern.com)-->
+
+            <datalist id="names">
+                <option value="Karl">Karl</option>          <!-- this dataset/options combo along with the list="".. -->
+                <option value="Maggie">Maggie</option>      <!-- in the input element a little further down acts as.. -->    
+                <option value="Amber">Amber</option>        <!-- an autocomplete suggestion list without any javascript -->
+            </datalist>                     
+         <p>AutoSuggestion: <input type="text" list="names"></p>        <!-- the list="" attribute should equal the id of the datalist -->
+
+         <p>Upload multiple files: <input type="file" multiple></p>     <!-- multiple - allows you to select more than 1 file to upload at a time -->
+
+        <p><input type="submit" value="Submit" formaction="processform2.php"></p> <!-- formaction - Allows you to setup mulitple actions based on what button is clicked etc -->
+    </form>
+
+    <p>Code outside form: <input type="text" form="myForm"></p> <!-- form="" linked to the id of a form allows you to put the input element outside of the form but still link it-->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
