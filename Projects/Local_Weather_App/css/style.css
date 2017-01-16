@@ -5,9 +5,13 @@
 }
 
 body {
-    /*background: url(http://fullhdwall.com/wp-content/uploads/2016/04/Landscape-Sunny-Day.jpg) no-repeat fixed center;*/
-    background-color: #dbdbdb;
+    background-color: #1C1C1C;
     background-size: cover;
+    font-family: 'Suez One', serif;
+    font-weight: bold;
+    font-size: 150%;
+    color: #6E6E6E;
+    text-shadow: 2px 2px 4px black;
 }
 
 h1 {
@@ -18,6 +22,7 @@ h1 {
 #wrapper {
     width: 150px;
     margin: 0 auto;
+    text-align: center;   
 }
 
 #location {
@@ -26,6 +31,21 @@ h1 {
 }
 
 img {
-    width: 100px;
-    margin: 15px 0px 15px 30px;
+    width: 200px;
+    margin: 80px 0px 15px 0px;
+    text-shadow: 2px 2px 4px black;
 }
+
+.deg{
+    color: #0404B4;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+ }
+
+ #temp {
+     display: inline;
+ }
+
+ #weatherInfo {
+     margin-top: 15px;
+ }
