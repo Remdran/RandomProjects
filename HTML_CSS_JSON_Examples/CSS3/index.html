@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Selectors</title>
+    <style>
+        div p {     /* Select all of the p tags in divs */
+            font-weight: bold;
+        }
+
+        h3 ~ p {    /* Select all of the Ps that are siblings (inside a div) of the h3 */
+            text-decoration: underline;
+        }
+
+        h3 + p {    /* Select the first P element after a h3 */
+            font-size: 150%;
+        }
+
+        a[target] { /* Select all of the elements with a target attribute */
+            color: red;
+        }
+
+        a[href=""] {     /* Select lelements that only go to a specific site */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>I am a heading</h1>
+
+    <div>
+        <h3>I am a h3 in the div</h3>
+        <p class="green">I am a paragraph in the div</p>
+        <p>I'm a paragraph in the div too</p>
+        <a href="#" target="_blank">I am a link with a target</a>
+    </div>
+    <p>I am a paragraph outside the div</p>
+    <a href="#">I am a link with no target outside the div</a>
+</body>
+</html>
