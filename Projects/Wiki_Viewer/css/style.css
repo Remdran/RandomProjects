@@ -1,0 +1,58 @@
+body {
+    background-color: #444545;
+}
+
+h1 {
+    text-align: center;
+    color: #AC9FBB;
+    font-size: 300%;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#randomPage {
+    text-align: center;
+    color: #AC9FBB;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+#randomPage :visited {
+    color: #AC9FBB;
+}
+
+#input {
+    margin-top: 5em;
+    height: 50px;
+    width: 500px;
+    font-size: 24px;
+}
+
+
+#results {
+    font-size: 40px;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+#results li {
+    margin: .5em;
+    padding: .5em 1em 1em .5em;
+    background-color: black;;
+    text-align: left;
+    text-decoration: none;
+    color: #AC9FBB;
+    list-style: none;
+}
+
+#blurb {
+    color: #AC9FBB;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #AC9FBB;
+}
