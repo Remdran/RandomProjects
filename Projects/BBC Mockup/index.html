@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>BBC Mockup</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <div>
-            <ul>
-                <li>Bell</li>    
-                <li>News</li>
-                <li>Sport</li>
-                <li>Weather</li>
-                <li>IPlayer</li>
-                <li>TV</li>
-                <li>Radio</li>
-                <li>More</li>
-                <li>Search</li>
-            </ul>   
+    <div id="topbar">
+        <img id="logo" src="http://nav.files.bbci.co.uk/orbit/1.0.0-346.93a6467/img/blq-orbit-blocks_grey.svg" alt="bbclogo">
+        <div id="signin" class="topbarSection"><span id="signinText">Sign in</span></div>
+        <div id="border"></div>            
+        <img id="bell" src="http://mybbc.files.bbci.co.uk/notification-ui/2.6.12-mvt/svg/bell_grey.svg">
+        <ol id="navbar1">
+            <li class="topbarSection">News</li>
+            <li class="topbarSection">Sport</li>
+            <li class="topbarSection">Weather</li>
+            <li class="topbarSection">iPlayer</li>
+            <li class="topbarSection">TV</li>
+            <li class="topbarSection">Radio</li>
+            <li class="topbarSection">More</li>
+            <li class="topbarSection">Search</li>
+        </ol>        
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="menubarContainer">
+        <div id="menubar">
+            <h1>News</h1>
+            <div id="findNews"><a href="#"> Find local news</a></div>
         </div>
-    </header>
-    
+    </div>
+
+    <div id="menubar2Container">
+        <div id="menubar2">
+            <ul id="navbar2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">UK</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Science</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Entertainment & Arts</a></li>
+                <li><a href="#">Video & Audio</a></li>
+                <li><a class="noborder" href="#">More</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
 </body>
+
 </html>
