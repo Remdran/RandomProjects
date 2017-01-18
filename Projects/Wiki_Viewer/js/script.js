@@ -1,6 +1,11 @@
+var contentLoaded = false;
 
 $( '#input' ).keypress(function(e){
     if(e.which === 13){
+        if(contentLoaded) {
+            $( '#results' ).html("");
+            contentLoaded = false;
+        }
         console.log($( '#input' ).val());
         var myUrl = $( '#input' ).val();
         SearchWiki(myUrl);
@@ -20,6 +25,7 @@ function SearchWiki(myUrl) {
                 $( '#results' ).add("<a href='" + data[3][i] + "'><li>" + data[1][i] + "<br>" + "<span id='blurb'>" + data[2][i] + "</span>" + "</li></a>").appendTo($( '#results' ));
                 console.log(data[1][i]);
             }
+            contentLoaded = true;
         //$( '#results' ).html(data[1]);
         }
     } );
