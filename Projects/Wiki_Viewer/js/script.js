@@ -12,6 +12,7 @@ $( '#input' ).keypress(function(e){
     }
 });
 
+
 function SearchWiki(myUrl) {
     $.ajax( {
         url: "https://en.wikipedia.org/w/api.php?action=opensearch&origin=*&format=json&search=" + myUrl,
@@ -22,14 +23,10 @@ function SearchWiki(myUrl) {
         success: function(data) {
             console.log(data);
             for(var i = 0; i < data[1].length; i++){
-                $( '#results' ).add("<a href='" + data[3][i] + "'><li>" + data[1][i] + "<br>" + "<span id='blurb'>" + data[2][i] + "</span>" + "</li></a>").appendTo($( '#results' ));
-                console.log(data[1][i]);
+                $( '#results' ).add("<a target='_blank' href='" + data[3][i] + "'><li>" + data[1][i] + "<br>" + "<span id='blurb'>" + data[2][i] + "</span>" + "</li></a>").appendTo($( '#results' ));               
             }
             contentLoaded = true;
         //$( '#results' ).html(data[1]);
         }
     } );
 }
-
-
-// url: "https://en.wikipedia.org/w/api.php?action=query&format=json&gsrlimit=15&generator=search&origin=*&gsrsearch=" + myUrl,
